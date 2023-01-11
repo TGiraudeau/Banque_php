@@ -3,8 +3,8 @@
 $config = [];
 $config['db'] = [
 	'host' => 'localhost',
-	'name' => 'projetbank',
+	'name' => 'bank',
 	'user' => 'root',
-	'pass' => '',
-	'port' => 3306
+	'pass' => 'root',
+	'port' => 8889
 ];
