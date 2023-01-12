@@ -15,6 +15,16 @@ ob_start();
 		<input type="text" id="email" name="email">
 	</div>
 	<div>
+		<label for="phone">phone</label>
+		<input type="number" id="phone" name="phone">
+	</div>
+	
+	<div>
+		<label for="fullname">nom</label>
+		<input type="text" id="fullname" name="fullname">
+	</div>
+
+	<div>
 		<label for="password">Mot de passe</label>
 		<input type="password" id="password" name="password">
 	</div>

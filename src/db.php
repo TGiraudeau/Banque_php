@@ -1,5 +1,14 @@
 <?php
 
+$config = [];
+$config['db'] = [
+	'host' => 'localhost',
+	'name' => 'bank',
+	'user' => 'root',
+	'pass' => 'root',
+	'port' => 8888
+];
+
 // la variable dsn     v
 // protocol:var1=value1;var2=value2;..
 // mysql:host=C_DB_HOST;dbname=C_DB_NAME;port=C_DB_PORT
@@ -10,3 +19,5 @@ try {
 } catch (Exception $e) {
 	die('Erreur MySQL. ' . $e->getMessage());
 }
+
+

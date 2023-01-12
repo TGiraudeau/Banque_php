@@ -2,18 +2,19 @@
 
 class User {
 	public $id;
+	public $phone;
 	public $email;
+	public $fullname;
 	public $password;
 	public $role;
-	public $created_at;
-	public $last_ip;
 
-	public static function create($email, $password, $role = 1, $ip) {
+	public static function create($fullname, $email, $phone, $password, $role = 1) {
 		$user = new User();
+		$user->phone = $phone;
 		$user->email = $email;
+		$user->fullname = $fullname; 
 		$user->password = hash('sha256', $password);
 		$user->role = $role;
-		$user->last_ip = $ip;
 		return $user;
 	}
 
@@ -22,8 +23,4 @@ class User {
 		return ($hashPassword === $this->password);
 	}
 
-	public function getCreatedAt() {
-		$date = new DateTime($this->created_at);
-		return $date->format('d/m/Y H:i:s');
-	}
 }

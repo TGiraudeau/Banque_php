@@ -26,7 +26,7 @@ if ($alreadyUser !== false) {
 }
 
 // Creer et inserer utilisateur en DB
-$user = User::create($_POST['email'], $_POST['password'], 1, $_SERVER['REMOTE_ADDR']);
+$user = User::create($_POST['fullname'], $_POST['email'], $_POST['phone'], $_POST['password'], 1);
 $user_id = $userManager->insert($user);
 
 // on verra pourquoi on ne stock que l'id

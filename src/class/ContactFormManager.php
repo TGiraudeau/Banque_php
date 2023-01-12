@@ -7,10 +7,10 @@ class ContactFormManager {
 		$this->db = $db;
 	}
 
-	public function save_contact_form($fullname, $phone, $email, $message) {
-		$stmh = $this->db->prepare('INSERT INTO contact_forms(fullname, phone, email, message) VALUES(:fullname, :phone, :email, :message)');
+	public function save_contact_form($Full_Name, $phone, $email, $message) {
+		$stmh = $this->db->prepare('INSERT INTO contact_forms(Full_Name, phone, email, message) VALUES(:Full_Name, :phone, :email, :message)');
 		$stmh->execute([
-			'fullname' => $fullname,
+			'Full_Name' => $Full_Name,
 			'phone' => $phone,
 			'email' => $email,
 			'message' => $message,

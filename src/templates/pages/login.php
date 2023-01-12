@@ -16,9 +16,16 @@ ob_start();
 		<label for="password">Mot de passe</label>
 		<input type="password" id="password" name="password">
 	</div>
+	<div>
+		<label for="phone">Phone</label>
+		<input type="number" id ="phone" name="phone">
+	</div>
 	<button type="submit">Login</button>
 </form>
 
+
 <?php
+
 // ob_get_clean c'est la fermeture des "" pour finir la chaine de caracteres et l'enregistrer dans la variable
 $page_content = ob_get_clean();
+?>
