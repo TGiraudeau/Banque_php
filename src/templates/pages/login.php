@@ -1,12 +1,5 @@
 <?php
 
-if (isset($_SESSION[$user=false])) {
-    header('Location: /?page=home');
-} 
-else $user=true
-?>
-<?php
-
 $page_title = "Login - MonSite.com";
 
 // ob_start, c'est comme si tu ouvrais les "" pour enregistrer une grosse chaine de caracteres.

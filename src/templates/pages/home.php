@@ -1,11 +1,4 @@
-<?php
 
-if (isset($_SESSION[$user=false])) {
-    header('Location: /?page=home');
-} 
-else $user=true
-
-?>
 
 
 <?php
