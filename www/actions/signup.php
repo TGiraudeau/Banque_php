@@ -32,4 +32,3 @@ $user_id = $userManager->insert($user);
 // on verra pourquoi on ne stock que l'id
 $_SESSION['user_id'] = $user_id;
 
-header('Location: /?page=home');

@@ -1,7 +1,7 @@
 <?php
 ob_start();
 $page_title = "Admin contact - monsite.com";
-$forms = $contactFormManager -> take_form();
+$forms = $contactFormManager -> get_forms();
 ?>
 
 <h1>Admin contact</h1>
@@ -11,9 +11,8 @@ foreach ($forms as $cform){ ?>
     <span> Nom : <?= $cform -> fullname?></span><br>
     <span>Email : <?= $cform ->email?></span><br>
     <span>Phone : <?= $cform->phone?></span><br>
-    <span>Date : <?= $cform->getCreatedAt() ?> </span><br>
-    <span>Message :</span>  <p><?= $cform->message?></p>
-
+    <span>Message :</span>  <p>
+    <?= $cform->message?></p>
 </div>
 <hr>
 <?php

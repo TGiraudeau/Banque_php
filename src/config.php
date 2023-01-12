@@ -3,7 +3,7 @@
 $config = [];
 $config['db'] = [
     'host'=> 'localhost',
-    'name'=> 'banque',
+    'name'=> 'bank',
     'user'=> 'root',
     'pass'=> 'root',
     'port'=> 8889

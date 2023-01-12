@@ -6,7 +6,7 @@ $config['db'] = [
 	'name' => 'bank',
 	'user' => 'root',
 	'pass' => 'root',
-	'port' => 8889
+	'port' => 8881
 ];
 
 // la variable dsn     v
