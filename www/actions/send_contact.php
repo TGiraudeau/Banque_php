@@ -35,6 +35,8 @@ $_POST['message'] = htmlspecialchars($_POST['message']);
 - 2. Gerer les erreurs/success sur la page
 - 3. Transformer l'enregistrement de message + header + die en une fonction
 */
+$stmh = $db->prepare('INSERT INTO contact_forms(fullname, phone, email, message) VALUES(:fullname, :phone, :email, :message)');
+$stmh->execute($_POST);
 
 $contactFormManager->save_contact_form($_POST['fullname'], $_POST['phone'], $_POST['email'], $_POST['message']);
 

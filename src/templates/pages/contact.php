@@ -3,7 +3,9 @@
 $page_title = "Contact - MonSite.com";
 
 ob_start();
+
 ?>
+
 <h1>Contactez-nous</h1>
 
 <?php show_error(); ?>
