@@ -8,9 +8,11 @@ if (isset($_GET['page'])) {
 		$page = $_GET['page'];
 	}
 }
-//oui
+
 include_once __DIR__ . "/../src/templates/pages/$page.php";
 include_once __DIR__ . "/../src/templates/template.php";
-// include_once __DIR__ . "/../src/templates/partials/head.php";
-// echo $page_conten t;
-// include_once __DIR__ . "/../src/templates/partials/footer.php";
+
+$nom ='';
+	$stmh = $db->prepare('SELECT user FROM bank WHERE id = 0');
+	$stmh->execute();
+ 

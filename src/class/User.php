@@ -8,11 +8,11 @@ class User {
 	public $password;
 	public $role;
 
-	public static function create($fullname, $email, $phone, $password, $role = 1) {
+	public static function create($fullname, $email, $phone, $password, $role) {
 		$user = new User();
-		$user->phone = $phone;
+		$user->fullname = $fullname;
 		$user->email = $email;
-		$user->fullname = $fullname; 
+		$user->phone = $phone;
 		$user->password = hash('sha256', $password);
 		$user->role = $role;
 		return $user;
