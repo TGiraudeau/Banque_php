@@ -32,9 +32,9 @@ class UserManager {
 	}
 
 	public function save_contact_form($Full_name, $phone, $email, $message) {
-		$stmh = $this->db->prepare('INSERT INTO contact_forms(Full_name, phone, email, message) VALUES(:Full_Name, :phone, :email, :message)');
+		$stmh = $this->db->prepare('INSERT INTO contact_forms(fullname, phone, email, message) VALUES(:fullname, :phone, :email, :message)');
 		$stmh->execute([
-	 		'Full_Name' => $Full_name,
+	 		'fullname' => $Full_name,
 	 		'phone' => $phone,
 	 		'email' => $email,
 	 		'message' => $message

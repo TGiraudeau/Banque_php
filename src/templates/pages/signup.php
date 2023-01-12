@@ -1,3 +1,5 @@
+
+
 <?php
 
 $page_title = "SignUp - MonSite.com";
@@ -18,7 +20,7 @@ ob_start();
 		<label for="phone">phone</label>
 		<input type="number" id="phone" name="phone">
 	</div>
-	
+
 	<div>
 		<label for="fullname">nom</label>
 		<input type="text" id="fullname" name="fullname">

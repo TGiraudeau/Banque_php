@@ -1,5 +1,15 @@
 <?php
 
+if (isset($_SESSION[$user=false])) {
+    header('Location: /?page=home');
+} 
+else $user=true
+
+?>
+
+
+<?php
+
 $page_title = "Accueil - MonSite.com";
 
 // $niceData = htmlspecialchars("Bonjour je tente une piraterie <script>alert('hacked')</script>");
