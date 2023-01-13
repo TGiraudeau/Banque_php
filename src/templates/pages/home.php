@@ -3,7 +3,15 @@ $page_title = "Accueil - Banque.com";
 
 ob_start();
 ?>
-<div class = title><h1>La banque du futur</h1></div>
+<div class="fill"><h1>La banque du futur</h1></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <?php
 // ob_get_clean c'est la fermeture des "" pour finir la chaine de caracteres et l'enregistrer dans la variable

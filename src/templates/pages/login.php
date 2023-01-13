@@ -5,6 +5,8 @@ $page_title = "Login - MonSite.com";
 // ob_start, c'est comme si tu ouvrais les "" pour enregistrer une grosse chaine de caracteres.
 ob_start();
 ?>
+
+<div class="fill">
 <h1>Login</h1>
 
 <form action="/actions/login.php" method="post">
@@ -22,6 +24,7 @@ ob_start();
 	</div>
 	<button type="submit">Login</button>
 </form>
+</div>
 
 
 <?php

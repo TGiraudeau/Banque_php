@@ -4,6 +4,7 @@ $page_title = "Admin contact - monsite.com";
 $forms = $contactFormManager -> get_forms();
 ?>
 
+<div class="fill">
 <h1>Admin contact</h1>
 <?php
 foreach ($forms as $cform){ ?>
@@ -13,6 +14,7 @@ foreach ($forms as $cform){ ?>
     <span>Phone : <?= $cform->phone?></span><br>
     <span>Message :</span>  <p>
     <?= $cform->message?></p>
+</div>
 </div>
 <hr>
 <?php

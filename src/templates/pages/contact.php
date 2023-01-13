@@ -6,6 +6,7 @@ ob_start();
 
 ?>
 
+<div class="fill">
 <h1>Contactez-nous</h1>
 
 <?php show_error(); ?>
@@ -30,6 +31,7 @@ ob_start();
 	</div>
 	<button type="submit">Envoyer</button>
 </form>
+</div>
 
 <?php
 $page_content = ob_get_clean();

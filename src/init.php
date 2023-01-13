@@ -11,7 +11,8 @@ require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/utils/errors.php';
 
 // pages existantes sur notre site internet
-$pages = ['home', 'contact', 'signup', 'login', 'admin_contact'];
+require_once __DIR__ . '/../www/actions/action_manager.php';
+$pages = ['home', 'contact', 'signup', 'login', 'admin_contact','admin_user'];
 
 // init variables vides pour le template
 $page_scripts = "";

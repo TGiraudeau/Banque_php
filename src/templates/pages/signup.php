@@ -7,6 +7,8 @@ $page_title = "SignUp - MonSite.com";
 // ob_start, c'est comme si tu ouvrais les "" pour enregistrer une grosse chaine de caracteres.
 ob_start();
 ?>
+
+<div class="fill">
 <h1>Signup</h1>
 
 <?php show_error(); ?>
@@ -36,6 +38,7 @@ ob_start();
 	</div>
 	<button type="submit">Signup</button>
 </form>
+</div>
 
 <?php
 // ob_get_clean c'est la fermeture des "" pour finir la chaine de caracteres et l'enregistrer dans la variable
