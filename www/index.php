@@ -15,7 +15,3 @@ include_once __DIR__ . "/../src/templates/template.php";
 // echo $page_content;
 // include_once __DIR__ . "/../src/templates/partials/footer.php";
 
-$nom ='';
-	$stmh = $db->prepare('SELECT user FROM bank WHERE id = 0');
-	$stmh->execute();
- 

@@ -47,5 +47,24 @@ class UserManager {
 
 	 	$forms = $stmh->fetchAll(PDO::FETCH_CLASS, 'ContactForm');
 	 	return $forms;
+
+		
 	 }
+	 public function take_user() { 
+		$stmh = $this->db->prepare('SELECT DISTINCT * FROM users WHERE role = 1');
+		$stmh->execute();
+		$donnees = $stmh->fetchAll(PDO::FETCH_CLASS,'user');
+		return $donnees;
+	}
+
+
+	public function update_role($id, $role){
+    $stmh = $this -> db -> prepare('UPDATE `users` SET `role`=? WHERE id =?');
+    $stmh->execute([
+        $role,
+        $id
+    ]);
+    }
+
 }
+
